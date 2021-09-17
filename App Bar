@@ -1,0 +1,25 @@
+# App_bar_mobile_programming
+
+import 'package:flutter/material.dart';
+
+class Tampilan extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text('RATRI PRAMUDITANINGSIH'),
+        leading: const IconButton(
+          icon: Icon(Icons.menu),
+          tooltip: 'Navigation menu',
+          onPressed: null,
+        ),
+          ),
+          body: Center(child: Text('Selamat Datang Teman-Teman')),
+          backgroundColor: Colors.blueGrey.shade200,
+      ));
+  }
+}
+
+void main() {
+runApp(Tampilan());
+}
